@@ -1,0 +1,104 @@
+﻿<!--
+        原项目：https://github.com/r00tSe7en/GoogleHackingTool/
+        修改：Acczdy
+		=======================================
+
+		【协议：】本项目仅供技术交流参考之用，请严格遵守当地法律法规，不要利用本项目中的技术进行违法犯罪操作，一旦触犯法律与Acczdy无关。
+		除非您已充分阅读、完全理解并接受本协议所有条款，否则，请您不要安装并使用本工具。您的使用行为或者您以其他任何明示或者默示方式表示接受本协议的，即视为您已阅读并同意本协议的约束。
+		如有侵权，请联系Acczdy及时删除！
+
+		=======================================
+-->
+<!DOCTYPE html>
+<html>
+<!-- 弹窗页面 Start
+  <script>
+	  var result = window.confirm("原项目：https://github.com/r00tSe7en/GoogleHackingTool/\r\n修改：Acczdy\r\n=======================================\r\n【协议：】本项目仅供技术交流参考之用，请严格遵守当地法律法规，不要利用本项目中的技术进行违法犯罪操作，一旦触犯法律与Acczdy无关。\r\n除非您已充分阅读、完全理解并接受本协议所有条款，否则，请您不要安装并使用本工具。您的使用行为或者您以其他任何明示或者默示方式表示接受本协议的，即视为您已阅读并同意本协议的约束如有侵权，请联系Acczdy及时删除！\r\n=======================================");
+		if (result) {
+		  // 用户点击了确定按钮
+		  // 打开页面
+		} else {
+		  // 用户点击了取消按钮
+		  // 关闭页面
+		  window.close();
+		}
+  
+  </script>
+  弹窗页面 End -->
+<head>
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" /> 
+  <title>在线Google Hacking小工具</title> 
+  
+  <link href="./css/Passwd.css" rel="stylesheet" /> 
+  <link href="../../static/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- 图标S--> 
+  <link href="../../static/css/materialdesignicons.min.css"  rel="stylesheet" /> 
+  <!-- 图标E-->
+  <!-- 页面顶部CSS S--> 
+  <link href="../../static/css/style.min.css"  rel="stylesheet" /> 
+  <!-- 页面顶部CSS E-->
+  <link rel="shortcut icon" href="favicon.ico" />
+  <script type="text/javascript" src="comonjs/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="comonjs/modernizr-2.6.2.min.js"></script>
+  
+  <script type="text/javascript" src="js/googlehack.js"></script>
+  <link type="text/css" rel="stylesheet" href="css/styles.css" />
+ </head> 
+ <body>
+<div class="container-fluid p-t-15"> 
+   <div class="row"> 
+    <div class="col-sm-12"> 
+     <div class="card"> 
+	 <!--<div class="card-header bg-primary">-->
+	<div class="card-header bg-info"> 
+       <h3><i class="mdi mdi-search-web"></i>&nbsp;在线Google Hacking小工具</h3>
+       <ul class="card-actions"> 
+       </ul> 
+      </div>
+	  </div>
+
+<body>
+
+<canvas id="fullstarbg">您的浏览器不支持canvas标签</canvas>
+
+<div class="content">
+ 	<center><img src="google.png" alt="google"></center>
+ 		<div class="input_wrap_box box_S">
+	 		<input id="sercHead" name="sercHead" type="text" class="box_S" value="" placeholder="example.com" onclick="">
+ 		</div>
+</div>
+
+<div class="options">
+	<ul>
+        <li><a href="#" onclick="do_google_search(1)" style="font-family:verdana;font-size:20px;color:#4285f4;text-decoration:none">目录遍历漏洞</a></li>
+
+        <li><a href="#" onclick="do_google_search(2)" style="font-family:verdana;font-size:20px;color:#4285f4;text-decoration:none">配置文件泄露</a></li>
+
+        <li><a href="#" onclick="do_google_search(3)" style="font-family:verdana;font-size:20px;color:#4285f4;text-decoration:none">数据库文件泄露</a></li>
+
+        <li><a href="#" onclick="do_google_search(4)" style="font-family:verdana;font-size:20px;color:#4285f4;text-decoration:none">日志文件泄露</a></li>
+
+        <li><a href="#" onclick="do_google_search(5)" style="font-family:verdana;font-size:20px;color:#4285f4;text-decoration:none">备份和历史文件</a></li>
+
+        <li><a href="#" onclick="do_google_search(6)" style="font-family:verdana;font-size:20px;color:#4285f4;text-decoration:none">登录页面</a></li>
+
+        <li><a href="#" onclick="do_google_search(7)" style="font-family:verdana;font-size:20px;color:#4285f4;text-decoration:none">SQL错误</a></li>
+
+        <li><a href="#" onclick="do_google_search(8)" style="font-family:verdana;font-size:20px;color:#4285f4;text-decoration:none">公开文件信息</a></li>
+
+        <li><a href="#" onclick="do_google_search(9)" style="font-family:verdana;font-size:20px;color:#4285f4;text-decoration:none">phpinfo()</a></li>
+	
+	<li><a href="#" onclick="do_google_search(10)" style="font-family:verdana;font-size:20px;color:#4285f4;text-decoration:none">搜索Pastebin.com和其他粘贴站点</a></li>
+		
+	<li><a href="#" onclick="do_google_search(11)" style="font-family:verdana;font-size:20px;color:#4285f4;text-decoration:none">搜索Github.com和Gitlab.com</a></li>
+    </ul>
+
+</div>
+
+<!-- <div class="footer">
+	<center> Copyright © 2019 CODING BY <a href="https://www.se7ensec.cn" style="font-family:verdana;color:#4285f4;text-decoration:none"> SE7EN </a> GIT HUB: <a href="https://github.com/r00tSe7en/GoogleHackingTool" style="font-family:verdana;color:#4285f4;text-decoration:none"> 在线google Hacking小工具 </a></center>
+</div> -->
+
+</body>
+</html>

